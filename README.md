@@ -12,8 +12,8 @@ Usage
  ...
  ```
 
- Install
- =======
+Install
+=======
 
  ```
  $ pip install docgo
