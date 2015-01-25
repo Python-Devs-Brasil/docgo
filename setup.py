@@ -26,6 +26,7 @@ setup(
     package_dir={'', 'docgo'},
     scripts=[],
     url='https://github.com/horacioibrahim/docgo',
+    download_url='https://github.com/horacioibrahim/docgo/releases/tag/0.2', 
     license='MIT License',
     description="This docgo provides a pydoc's tradutor for pt-br",
     long_description = """
