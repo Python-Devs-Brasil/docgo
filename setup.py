@@ -15,18 +15,17 @@ except ImportError:
 import sys, os
 from setuptools import find_packages
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'docgo'))
-from docgo.version import __version__
 
 setup(
     name = 'docgo',
-    version = __version__,
+    version = '0.2',
     author='Horacio Ibrahim',
     author_email = 'horacioibrahim@gmail.com',
     packages=find_packages('docgo'),
     package_dir={'', 'docgo'},
     scripts=[],
     url='https://github.com/horacioibrahim/docgo',
-    download_url='https://github.com/horacioibrahim/docgo/releases/tag/0.2', 
+    download_url='https://github.com/horacioibrahim/docgo/releases/tag/0.2',
     license='MIT License',
     description="This docgo provides a pydoc's tradutor for pt-br",
     long_description = """
