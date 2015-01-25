@@ -26,7 +26,7 @@ setup(
     package_dir={'', 'docgo'},
     scripts=[],
     url='https://github.com/horacioibrahim/docgo',
-    license='Apache License',
+    license='MIT License',
     description="This docgo provides a pydoc's tradutor for pt-br",
     long_description = """
     This docgo provides a pydoc's tradutor for pt-br. goslate is an API for
