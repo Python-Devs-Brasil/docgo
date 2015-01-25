@@ -1,10 +1,10 @@
-docgo: Small tradutor for python's docstring
+docgo: a small tradutor for python's docstring
 ===============================================
 
-``docgo`` uses goslate to make translations.
+``docgo`` uses goslate to make translations. See goslate for more details.
 
 Usage
------
+=====
 ```
 >>> from docgo import hp
 >>> hp(dir)
@@ -13,7 +13,7 @@ Usage
  ```
 
  Install
- -------
+ =======
 
  ```
  $ pip install docgo
