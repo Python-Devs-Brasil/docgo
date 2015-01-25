@@ -8,7 +8,7 @@ __date__ = '2015-01-25'
 '''
 
 try:
-    from distutils.cor import setup
+    from distutils.core import setup
 except ImportError:
     from setuptools import setup
 
@@ -17,23 +17,22 @@ except ImportError:
 
 setup(
     name = 'docgo',
-    version = '0.2',
+    version = '0.4',
     author='Horacio Ibrahim',
     author_email = 'horacioibrahim@gmail.com',
     packages=['docgo'],
     url='https://github.com/horacioibrahim/docgo',
-    download_url='https://github.com/horacioibrahim/docgo/releases/tag/0.2',
+    download_url='https://github.com/horacioibrahim/docgo/tarball/master',
     license='MIT License',
     description="This docgo provides a pydoc's tradutor for pt-br",
+    install_requires=['goslate>=1.3.0'],
     long_description = """
-    This docgo provides a pydoc's tradutor for pt-br. goslate is an API for
-    translate any text using Google Translate. godoc uses this package to
-    translate pydoc's .
-
-    See more: goslate for more details.
+    This docgo provides a pydoc's tradutor for pt-br. The goslate is an API for \n
+    translate any text using Google Translate. The godoc use it for \n
+    translate pydoc's.
     """,
     classifiers=[
-        'Development Status :: Production/Stable',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Education',
         'Natural Language :: Portuguese (Brazilian)',
         'Operating System :: OS Independent',
