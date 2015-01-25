@@ -1,9 +1,9 @@
-docgo: Traduz a documentação embutida do Python
-################################################
+docgo: Small tradutor for python's docstring
+===============================================
 
-``docgo`` utiliza o goslate para traduzir a documentação python.
+``docgo`` uses goslate to make translate.
 
-Uso
+Usage
 ====
 ```
 >>> from docgo import hp
@@ -12,7 +12,7 @@ Uso
  ...
  ```
 
- Instalação
+ Install
  ==========
 
  ```
