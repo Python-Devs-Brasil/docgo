@@ -12,18 +12,15 @@ try:
 except ImportError:
     from setuptools import setup
 
-import sys, os
-from setuptools import find_packages
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'docgo'))
+#import sys, os
+#sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'docgo'))
 
 setup(
     name = 'docgo',
     version = '0.2',
     author='Horacio Ibrahim',
     author_email = 'horacioibrahim@gmail.com',
-    packages=find_packages('docgo'),
-    package_dir={'', 'docgo'},
-    scripts=[],
+    packages=['docgo'],
     url='https://github.com/horacioibrahim/docgo',
     download_url='https://github.com/horacioibrahim/docgo/releases/tag/0.2',
     license='MIT License',
@@ -36,9 +33,9 @@ setup(
     See more: goslate for more details.
     """,
     classifiers=[
-        'Developement Status :: Production/Stable',
-        'Intended Audience :: Dummies Developers',
-        'Natural Language :: Brazilian Portuguese',
+        'Development Status :: Production/Stable',
+        'Intended Audience :: Education',
+        'Natural Language :: Portuguese (Brazilian)',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
@@ -46,5 +43,5 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
-    keywors = ['docgo', 'translate', 'pt-br', 'pydoc']
+    keywords = ['docgo', 'translate', 'pydoc'],
 )
