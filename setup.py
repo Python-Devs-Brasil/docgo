@@ -28,7 +28,7 @@ setup(
     install_requires=['goslate>=1.3.0'],
     long_description = """
     This docgo provides a pydoc's tradutor. The goslate is an API for \n
-    translate any text using Google Translate. The godoc use it for \n
+    translate any text using Google Translate. The docgo use it for \n
     translate pydoc's.
     """,
     classifiers=[

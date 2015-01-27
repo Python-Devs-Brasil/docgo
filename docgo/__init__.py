@@ -11,6 +11,9 @@ docgo.dhelp(dir, lang='en') # you can pass optional language
 
 """
 
+# RELEASES 0.6
+# + Fix typo in setup.py from godoc to docgo
+
 # RELEASES 0.5
 # + Added support for multiple language
 # + Automatically get language from system [optional, default is pt-br]
