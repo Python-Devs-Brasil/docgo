@@ -17,17 +17,17 @@ except ImportError:
 
 setup(
     name = 'docgo',
-    version = '0.4',
+    version = '0.5',
     author='Horacio Ibrahim',
     author_email = 'horacioibrahim@gmail.com',
     packages=['docgo'],
     url='https://github.com/horacioibrahim/docgo',
     download_url='https://github.com/horacioibrahim/docgo/tarball/master',
     license='MIT License',
-    description="This docgo provides a pydoc's tradutor for pt-br",
+    description="docgo is a pydoc's translator",
     install_requires=['goslate>=1.3.0'],
     long_description = """
-    This docgo provides a pydoc's tradutor for pt-br. The goslate is an API for \n
+    This docgo provides a pydoc's tradutor. The goslate is an API for \n
     translate any text using Google Translate. The godoc use it for \n
     translate pydoc's.
     """,

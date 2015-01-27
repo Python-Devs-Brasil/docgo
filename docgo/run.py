@@ -21,19 +21,39 @@
 
 import inspect
 import sys
+import locale
 
 try:
     import goslate
 except ImportError:
     raise TypeError(u"Requer a lib goslate. \n\nUse:\n$ pip install goslate")
 
-def help(obj, lang='pt-br'):
-    """ Prints translated text.
 
-    :param obj: class, module, function or any python object with docstring.
+class Docgo(object):
+    """ Translates docstrings by using Google Translator.
+
+        :param obj: it's a python object with docstring that will inspected. An
+                    error will raised (AssertionError) if not found docstring.
+        :param lang: the target language. By default is used language from system.
+        :return: translated text.
+
     """
-    encoding = sys.getfilesystemencoding()
-    gs = goslate.Goslate()
-    doc = inspect.getdoc(obj)
-    doc_translated = gs.translate(doc, lang)
-    print doc_translated.encode(encoding)
+
+    def __init__(self, obj, lang=None):
+        self.language, self.encoding = self._get_locale()
+        lang = lang if lang else self.language
+        return self._help(obj, lang)
+
+    def _get_locale(self):
+        lang, encoding = locale.getdefaultlocale()
+        return lang, encoding
+
+    def _help(self, obj, lang):
+        """ This is similar the bult-in function help but prints translated text.
+
+        :param obj: class, module, function or any python object with docstring.
+        """
+        gs = goslate.Goslate()
+        doc = inspect.getdoc(obj)
+        doc_translated = gs.translate(doc, lang)
+        print doc_translated.encode(self.encoding)

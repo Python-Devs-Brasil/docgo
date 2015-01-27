@@ -6,8 +6,8 @@ docgo: a small tradutor for python's docstring
 Usage
 =====
 ```
->>> from docgo import hp
->>> hp(dir)
+>>> from docgo import *
+>>> dhelp(dir)
  dir ([objeto]) -> lista de strings
  ...
  ```
