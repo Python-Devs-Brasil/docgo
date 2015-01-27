@@ -9,6 +9,12 @@ docgo.dhelp(filter) # the default language retrieved from system
 docgo.dhelp(dir, lang='en') # you can pass optional language
 ...
 
+or
+
+from docgo import *
+dhelp(filter) # the default language retrieved from system
+...
+
 """
 
 # RELEASES 0.6
