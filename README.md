@@ -8,8 +8,11 @@ Usage
 =====
 ```
 >>> from docgo import *
->>> dhelp(dir)
+>>> dhelp(dir) # the default language retrieved from system
  dir ([objeto]) -> lista de strings
+ ...
+# or
+>>> dhelp(dir, lang='en') # you can pass optional language
  ...
  ```
 
